@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link href="./output.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body class="bg-white poppins-medium">
+    <header id="navbar" class="w-full">
+      <div  class=" mx-auto flex items-center justify-between px-6 py-5 md:px-30">
+
+        <!-- Logo -->
+         <a href="index.html" class="flex">
+          <img src="../images/Logo.png" alt="Logo" class="size-9">
+          <h1 class="text-2xl text-[#13261B] md:text-2xl font-[400]">Greenleaf</h1>
+         </a>
+        
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex">
+          <ul
+            class="font-poppins flex items-center gap-6 text-[#5b6b64] hover:text-[#3f4f49] transition duration-200"
+          >
+            <li>
+              <a href="index.html" class="hover:border-b-2 border-green-600 pb-1"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:border-b-2 border-green-600 pb-1"
+                >Service</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:border-b-2 border-green-600 pb-1"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:border-b-2 border-green-600 pb-1"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:border-b-2 border-green-600 pb-1"
+                >Contact</a
+              >
+            </li>
+            <i class="fa-solid fa-magnifying-glass-minus"></i>
+          </ul>
+        </nav>
+
+        <!-- Hamburger Icon (Mobile) -->
+        <div class="md:hidden px-4">
+          <button type="button" id="menu-btn" aria-label="button" class="text-2xl focus:outline-none">
+            <span class="fa-solid fa-bars"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white px-6 pb-4">
+        <ul class="flex flex-col gap-4 text-[#5b6b64]">
+          <li>
+            <a href="#" class="hover:border-b-2 border-green-600 pb-1">Home</a>
+          </li>
+          <li>
+            <a href="#" class="hover:border-b-2 border-green-600 pb-1"
+              >Service</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:border-b-2 border-green-600 pb-1">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:border-b-2 border-green-600 pb-1">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="hover:border-b-2 border-green-600 pb-1"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- About us Section -->
+
+    <section id="About" class="md:mt-15">
+        <div class="bg-[#f3f6f5] text-[#5b6b64] font-[400] text-center w-25 mx-auto rounded-4xl">
+            About us
+        </div>
+        <div class="text-center text-4xl md:text-7xl font-[400] mt-5 md:mt-10">Our story so far</div>
+        <div class="text-[#5b6b64] text-center mt-8 font-[400]">Meet the team and <br class="md:hidden"> learn about our mission.</div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 px-5 md:px-40 mt-15 md:mt-30">
+            <div class="md:mt-20">
+                <span class="text-[#5b6b64] bg-[#f3f6f5] font-[400] py-1 px-2 rounded-4xl">Who we are</span>
+                <h1 class="mt-8 text-3xl  md:text-5xl font-[400]">About GreenLeaf</h1>
+                <p class="text-[#5b6b64] mt-5 md:mt-10 font-[400] md:pr-15">GreenLeaf is a carbon consultancy helping SMEs turn  climate 
+                    ambition into action. We provide practical, data- driven support for 
+                    decarbonisation and ESG reporting—  empowering businesses 
+                    to stay ahead and build lasting value.
+                </p>
+                
+                <h1 class="font-[400] text-[#5b6b64] mx-auto md:mx-0 my-10 text-normal">Trusted by:</h1>
+                <!-- <div class="flex px-10">
+                    <img src="../images/t-1.png" alt="" class="object-cover size-30">
+                    <img src="../images/t-2.png" alt="">
+                    <img src="../images/t-3.png" alt="">
+                </div> -->
+                
+            </div>
+            <div class="text-center relative">
+                <img src="../images/pic_16.png" alt="About-Section" class="rounded-2xl">
+                <span class=" absolute bg-[#47535f] text-white top-25 md:top-50 left-2 md:left-20 rounded-4xl py-1 px-2 text-[12px] font-[400]">Impact obsessed</span>
+                <span class="absolute bg-[#47535f] text-white bottom-10 md:bottom-50 right-2 md:right-10 rounded-4xl py-1 px-2 text-[12px] font-[400]">Carbon experts</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="Section_2" class="mt-20 md:mt-30">
+        <div class="bg-[#f3f6f5] text-[#5b6b64] text-center mx-auto w-40 rounded-4xl font-[400]">Mission & values</div>
+        <div class="text-2xl md:text-5xl text-center font-[400] my-5">We're on a mission…</div>
+
+        <p class="text-[#5b6b64] text-center font-[400] px-5">…to empower small and mid-sized businesses to thrive in a low- <br class="block sm:hidden"> carbon economy. 
+        Along the way, we hold these values true.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mx-5 md:mx-70 mt-15 md:mt-20">
+            <!-- Card -->
+          <div class="bg-[#f3f6f5] rounded-3xl p-8 relative w-full md:w-[80%]">
+            <div class="absolute top-4 left-6 w-10 h-10 bg-white rounded-full shadow-xl flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.5 16.5c-1.5 1.25-2 5-2 5s3.75-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                </svg>
+            </div>
+        
+            <h3 class="text-2xl font-semibold text-[#13261b] mt-30">Ambitious</h3>
+            <p class="text-[#5b6b64] mt-2">
+              We help clients lead, not lag, on climate action
+            </p>
+          </div>
+      
+          <!-- Card -->
+          <div class="bg-[#f3f6f5] rounded-3xl p-8 relative w-full md:w-[80%]">
+            <div class="absolute top-4 left-6 w-10 h-10 bg-white rounded-full shadow-xl flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+            </div>
+        
+            <h3 class="text-2xl font-semibold text-[#13261b] mt-30">Practical</h3>
+            <p class="text-[#5b6b64] mt-2">
+              Clear, grounded advice that fits your business
+            </p>
+          </div>
+      
+          <!-- Card -->
+          <div class="bg-[#f3f6f5] rounded-3xl p-8 relative w-full md:w-[80%]">
+            <div class="absolute top-4 left-6 w-10 h-10 bg-white rounded-full shadow-xl flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+            </div>
+        
+            <h3 class="text-2xl font-semibold text-[#13261b] mt-30">Impactful</h3>
+            <p class="text-[#5b6b64] mt-2">
+              Designed to deliver measurable, lasting results
+            </p>
+          </div>
+      
+          <!-- Card -->
+          <div class="bg-[#f3f6f5] rounded-3xl p-8 relative w-full md:w-[80%]">
+            <div class="absolute top-4 left-6 w-10 h-10 bg-white rounded-full shadow-xl flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+            </div>
+        
+            <h3 class="text-2xl font-semibold text-[#13261b] mt-30">Collaborative</h3>
+            <p class="text-[#5b6b64] mt-2">
+              Built on trust, insight, and long-term partnership
+            </p>
+          </div>
+      
+        </div>
+    </section>
+
+<!-- Founder Section -->
+    <section class="Founder mt-30">
+        <h2 class="bg-[#f3f6f5] text-center mx-auto w-20 rounded-4xl py-1 font-[400]">Team</h2>
+        <h1 class="text-3xl md:text-5xl text-center font-[400] py-5 md:py-10 md:mb-15">Meet our founders</h1>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 px-5 md:px-30 gap-15">
+
+           <div class="rounded-3xl overflow-hidden">
+                <img src="../images/f-1.png" alt="" class="w-full md:h-[600px] object-cover"/>                    
+            </div>
+            
+            <div class="md:mt-50">
+                <h1 class="text-3xl font-[400]">Laura Hall</h1>
+                <p class="text-[#5e6b64] text-xl md:text-2xl font-[500] mt-3 mb-5">Co-founder & technical director</p>
+                <p class="text-[#5e6b64]">Laura is a carbon accounting expert with a background in <br class="block sm:hidden">
+                    environmental science. She’s supported global clients with <br class="block sm:hidden">
+                    emissions reporting and compliance. At GreenLeaf, she ensures <br class="block sm:hidden">
+                    all work is technically sound, transparent, and results-driven.
+                </p>
+            </div>
+        </div>
+
+        <!-- Image -2 -->
+
+        <div class="grid grid-cols md:flex md:flex-row-reverse md:justify-between px-5 md:px-30 gap-20">
+
+            <div class="md:mt-15">
+                <div class="rounded-3xl overflow-hidden">
+                    <img src="../images/f-2.png" alt="" class="w-full md:h-[600px] object-cover"/>                    
+                </div>
+            </div>    
+            <div>
+                <h1 class="text-3xl font-[400] md:mt-70">Laura Hall</h1>
+                <p class="text-[#5e6b64] text-xl md:text-2xl font-[500] mt-3 mb-5">Co-founder & technical director</p>
+                <p class="text-[#5e6b64]">Laura is a carbon accounting expert with a background in <br class="block sm:hidden">
+                    environmental science. She’s supported global clients with <br class="block sm:hidden">
+                    emissions reporting and compliance. At GreenLeaf, she ensures <br class="block sm:hidden">
+                    all work is technically sound, transparent, and results-driven.
+                </p>
+            </div>
+             
+        </div>
+
+    </section>
+
+
+    <!-- Footer Section -->
+    <section id="Footer">
+      <div class="bg-[#13261b] px-5 sm:px-10 md:px-20 lg:px-30 py-20 md:rounded-t-4xl mt-10 md:mt-20">
+
+        <!-- Top Section -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-10 sm:gap-10 md:gap-[50%]">
+
+          <div class="md:w-1/3">
+            <div class="flex gap-3 items-center">
+              <img src="../images/footer_logo.png" alt="Logo" class="size-10 brightness-0 invert">
+              <h1 class="text-2xl md:text-4xl font-[400] text-white">Greenleaf</h1>
+            </div>
+
+            <div class="text-white mt-5 text-sm md:text-base font-light">
+              Carbon consultants for savvy SMEs.
+            </div>
+
+            <div class="flex items-center gap-5 mt-8">
+              <a href="#" class="text-white hover:opacity-70 transition-opacity">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-white hover:opacity-70 transition-opacity">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-white hover:opacity-70 transition-opacity">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="#" class="text-white hover:opacity-70 transition-opacity">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        
+          <!-- Right Columns -->
+          <div class="flex gap-16 md:gap-32 text-white">
+            <div>
+              <h3 class="text-lg md:text-xl font-normal mb-6">Pages</h3>
+              <ul class="space-y-3 text-sm md:text-base font-light">
+                <li><a href="#" class="hover:text-gray-300 transition-colors">Home</a></li>
+                <li><a href="#" class="hover:text-gray-300 transition-colors">About</a></li>
+                <li><a href="#" class="hover:text-gray-300 transition-colors">Services</a></li>
+                <li><a href="#" class="hover:text-gray-300 transition-colors">Blog</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-lg md:text-xl font-normal mb-6">Information</h3>
+              <ul class="space-y-3 text-sm md:text-base font-light">
+                <li><a href="#" class="hover:text-gray-300 transition-colors">Contact</a></li>
+                <li><a href="#" class="hover:text-gray-300 transition-colors">Privacy policy</a></li>
+                <li><a href="#" class="hover:text-gray-300 transition-colors">Terms</a></li>
+                <li><a href="#" class="hover:text-gray-300 transition-colors">404</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="border-t border-gray-600 mt-16 mb-8"></div>
+
+        <!-- Bottom Section -->
+        <div class="md:text-center text-white text-sm md:text-base font-light">
+          <div>© 2025 GreenLeaf, All rights reserved</div>
+        </div>     
+      </div>
+</section>
+</body>
+</html>

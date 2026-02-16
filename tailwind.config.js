@@ -1,13 +1,15 @@
-module.exports = {
-  content: ["./*.html", "./src/**/*.{js,css}"],
+// module.exports = {
+//   content: ["./*.html",
+//     "./about.html",
+//     "./src/**/*.{js,css}"],
 
-  theme: {
-    extend: {
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-      },
-    },
-  },
+//   theme: {
+//     extend: {
+//       fontFamily: {
+//         poppins: ["Poppins", "sans-serif"],
+//       },
+//     },
+//   },
 
-  plugins: [],
-};
+//   plugins: [],
+// };
