@@ -20,3 +20,31 @@ function toggleAnswer(questionNumber) {
     icon.classList.add('fa-minus');
   }
 }
+
+
+let lastScroll = 0;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  // if at very top → always show navbar
+  if (currentScroll <= 10) {
+    navbar.classList.remove("-translate-y-full");
+    navbar.classList.add("translate-y-0");
+    return;
+  }
+
+  if (currentScroll > lastScroll) {
+    // scrolling DOWN → hide navbar
+    navbar.classList.remove("translate-y-0");
+    navbar.classList.add("-translate-y-full");
+  } else {
+    // scrolling UP → show navbar
+    navbar.classList.remove("-translate-y-full");
+    navbar.classList.add("translate-y-0");
+  }
+
+  lastScroll = currentScroll;
+});
+
