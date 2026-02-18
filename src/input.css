@@ -1,11 +1,95 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 @import "tailwindcss";
 
  @theme{
     --font-Quicksand: "Quicksand", sans-serif;
-} 
+}
+
+@layer utilities {
+  .animate-slide-down {
+    animation: slideDown 0.9s ease-out forwards;
+  }
+}
+
+/* Keyframes */
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .animate-slide-up {
+    animation: slideUp 0.9s ease-out forwards;
+  }
+}
+
+/* Keyframes */
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px); /* start BELOW */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0); /* original position */
+  }
+}
+
+@layer utilities {
+  .animate-slide-left {
+    animation: slideLeft 0.9s ease-out forwards;
+  }
+}
+
+/* Keyframes */
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40px); /* start on RIGHT */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0); /* original position */
+  }
+}
+
+@layer utilities {
+  .animate-slide-right {
+    animation: slideRight 0.9s ease-out forwards;
+  }
+}
+
+/* Keyframes */
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-40px); /* start on LEFT */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0); /* original position */
+  }
+}
+
+
+
+
 
 .poppins-bold {
   font-family: "Poppins", sans-serif;
@@ -39,9 +123,11 @@
   transform: translate(0);
 }
 
+
 .hover_effect{
-  @apply group cursor-pointer transition-all duration-300 hover:-translate-y-3
+  @apply  cursor-pointer transition-all duration-300 hover:-translate-y-3
 }
+
 
 @media screen and (max-width: 600px) {
   .remove-on-mobile {
